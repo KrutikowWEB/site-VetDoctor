@@ -1,0 +1,37 @@
+.app{
+    width: 100%;
+    padding-top: 251px;
+    padding-bottom: 350px;
+    background-color: $orange;
+    &__wrapper{
+        position: relative;
+        width: 826px;
+        padding-left: 90px;
+    }
+    &__deskr{
+        font-size: 30px;
+        font-weight: 400;
+        line-height: 20px;
+        color: #FFFFFF;
+    }
+    &__title{
+        margin-top: 30px;
+        @extend %font80px;
+        color: #FFFFFF;
+    }
+    &__list{
+        margin-top: 30px;
+        display: flex;
+        gap: 23px;
+    }
+    &__image1{
+        position: absolute;
+        right: -340px;
+        top: 115px;
+    }
+    &__image2{
+        position: absolute;
+        right: -575px;
+        top: -35px;
+    }
+}

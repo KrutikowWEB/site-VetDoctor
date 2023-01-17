@@ -1,0 +1,74 @@
+.promo{
+    width: 100%;
+    padding-top: 150px;
+    &__container{
+        width: 1760px;
+        margin: 0 auto;
+        position: relative;
+        padding-left: 335px;
+    }
+    &__buttons{
+        position: absolute;
+        top: 405px;
+    }
+    &__icons{
+        position: absolute;
+        bottom: 80px;
+        justify-content: flex-start;
+    }
+    &__link{
+        &:hover .footer__logo{
+            fill: $brown;
+        }
+    }
+    &__phone{
+        display: block;
+        position: absolute;
+        right: 0;
+        bottom: 80px;
+        font-size: 24px;
+        line-height: 30px;
+        color: $brown;
+        z-index: 2;
+    }
+    &__item{
+        min-height: 785px;
+        &-wrapper{
+            display: flex;
+        }
+    }
+    &__title{
+        min-width: 655px;
+        max-width: 826px;
+    }
+    .slick-dots{
+        position: absolute;
+        top: 0;
+        left: -280px;
+        display: flex;
+        flex-direction: column;
+        gap: 70px;
+        list-style-type: none;
+    }
+    .slick-dots button {
+        position: relative;
+        background-color: #FFFFFF;
+        border: none;
+        @extend %font20px;
+        color: $brown-light;
+        transition: all .2s;
+        &:hover{
+            color: $brown;
+        }
+    }
+    .slick-dots li[class="slick-active"] button {
+        color: $brown;
+        &::before{
+            content: url('../icons/promo/process.png');
+            position: absolute;
+            top: -50%;
+            right: 50%;
+            transform: translate(50%);
+        }
+    }
+}

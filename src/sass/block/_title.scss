@@ -1,0 +1,9 @@
+.title{
+    @extend %font80px;
+}
+
+.subtitle{
+    @extend %font40px;
+    text-align: center;
+    color: $text;
+}

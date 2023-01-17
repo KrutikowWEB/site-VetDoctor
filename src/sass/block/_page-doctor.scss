@@ -1,0 +1,165 @@
+.doctor{
+    width: 100%;
+    &__block{
+        margin-top: 0;
+    }
+    &__right{
+        &-wrapper{
+            width: 910px;
+        }
+    }
+    &__slick1{
+        margin-top: 20px;
+        .slick-next{
+            z-index: 1;
+            position: absolute;
+            width: 40px;
+            height: 40px;
+            background-color: $orange;
+            border-radius: 50%;
+            border: none;
+            top: 50%;
+            transform: translateY(-50%);
+            right: 25px;
+            transition: all .2s;
+            &:hover{
+                background-color: $brown;
+            }
+        }
+    }
+    &__item1{ 
+        margin-right: 16px;
+        display: inline-block;
+        width: auto;
+        padding: 16px;
+        border: 1px solid $brown-bg;
+        border-radius: 20px;
+    }
+    &__subtitle{
+        margin-top: 4px;
+    }
+    &-text{
+        margin-top: 0;
+        color: $brown-light;
+    }
+    &__slick2{
+        margin-top: 30px;
+        .slick-dots{
+            position: absolute;
+            top: -54px;
+            right: 0;
+            display: flex;
+            list-style-type: none;
+            background-color: #FFFFFF;
+        }
+        .slick-dots button {
+            background-color: #FFFFFF;
+            margin-right: 16px;
+            @extend %font20px2;
+            color: $brown-light;
+            border: none;
+            outline: none;
+        }
+        .slick-dots li[class="slick-active"] button {
+            color: $text;
+        }
+    }
+    &__feedback{
+        margin-bottom: 30px;
+        position: relative;
+        display: inline-block;
+        padding: 30px 30px 30px 190px;
+        border: 1px solid $brown-bg;
+        border-radius: 20px;
+        &::before{
+            content: '';
+            position: absolute;
+            top: 30px;
+            left: 30px;
+            background-image: url('../img/page-doctor/not-user.png');
+            width: 130px;
+            height: 130px;
+        }
+        &::after{
+            content: '';
+            position: absolute;
+            top: 30px;
+            right: 30px;
+            background-image: url('../img/page-doctor/cat1.png');
+            width: 50px;
+            height: 50px;
+        }
+        &-info{
+            margin-bottom: 20px;
+            &:nth-child(2){
+                margin-bottom: 30px;
+            }
+            &:last-child{
+                position: relative;
+                margin-bottom: 0;
+                padding-left: 105px;
+                &::before{
+                    content: '';
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    background-image: url('../img/page-doctor/call-women.png');
+                    width: 75px;
+                    height: 75px;
+                }
+            }
+        }
+        &-text{
+            color: $brown;
+        }
+        &:nth-child(2){
+            &::before{
+                background-image: url('../img/page-doctor/user1.png');
+            }
+            &::after{
+                background-image: url('../img/page-doctor/cat2.png');
+            } 
+        }
+        &:nth-child(3){
+            &::before{
+                background-image: url('../img/page-doctor/user2.png');
+            }
+            &::after{
+                background-image: url('../img/page-doctor/cat3.png');
+            } 
+        }
+        &:nth-child(4){
+            margin-bottom: 0;
+            &::before{
+                background-image: url('../img/page-doctor/user3.png');
+            }
+            &::after{
+                background-image: url('../img/page-doctor/cat4.png');
+            } 
+        }
+    }
+    &__left{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    &__avatar{
+        margin-bottom: 30px;
+    }
+    &__buttons{
+        position: inherit;
+        margin: 57px 0;
+    }
+    &__review{
+        border: none;
+        background-color: #fff;
+        &-text{
+            transition: all .2s;
+            color: $orange;
+            @extend %font20px;
+        }
+        &:hover &-text{
+            color: $brown;
+        }
+    }
+}

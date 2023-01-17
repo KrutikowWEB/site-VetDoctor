@@ -1,0 +1,25 @@
+.history{
+    padding-bottom: 100px;
+    &__wrapper{
+        margin-top: 70px;
+        width: 100%;
+        gap: 165px;
+    }
+    &__left{
+        width: 530px;
+    }
+    &__block{
+        &-image{
+            padding-top: 50px;
+            padding-bottom: 20px;
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+}
+#general__block1{
+    margin-top: 50px;
+}
+#general__block3{
+    margin-top: 70px;
+}

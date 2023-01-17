@@ -1,0 +1,12 @@
+.news{
+    &__link{
+        &::before{
+            background-image: url('../img/page-news/ambulance.png');
+        }
+        &_exit{
+            &::before{
+                opacity: 0.5;
+            }
+        }
+    }
+}

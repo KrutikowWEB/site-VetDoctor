@@ -1,0 +1,96 @@
+.information{
+    margin-top: 20px;
+    &__title{
+        transition: all .2s;
+        @extend %font15px;
+        color: $brown-light;
+        &_exit{
+            color: $brown;
+        }
+    }
+    &__subtitle{
+        transition: all .2s;
+        margin-top: 10px;
+        @extend %font20px2;
+        line-height: 25px;
+        color: $text;
+        &_exit{
+            color: $brown-light;
+        }
+    }
+    &:nth-child(1){
+        margin-top: 0;
+    }
+}
+
+.team{
+    padding-bottom: 100px;
+    &__list{
+        margin-top: 50px;
+        display: grid;
+        grid-template: repeat(auto-fill, minmax(100px, 255px))/repeat(2, 1fr);
+        gap: 25px;
+    }
+    &__item{
+        position: relative;
+        display: inline-block;
+        padding: 30px 30px 30px 180px;
+        box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.1);
+        border-radius: 20px;
+        &:hover{
+            text-decoration: none;
+            .information__title, .information__subtitle{
+                color: $orange;
+            }
+        }
+        &::before{
+            content: '';
+            position: absolute;
+            top: 30px;
+            left: 30px;
+            background-image: url('../img/page-team/team1.png');
+            width: 130px;
+            height: 130px;
+        }
+        &:nth-child(2){
+            &::before{
+                background-image: url('../img/page-team/team4.png');
+            }
+        } 
+        &:nth-child(3){
+            &::before{
+                background-image: url('../img/page-team/team2.png');
+            }
+        }
+        &:nth-child(4){
+            &::before{
+                background-image: url('../img/page-team/team5.png');
+            }
+        }
+        &:nth-child(5){
+            &::before{
+                background-image: url('../img/page-team/team3.png');
+            }
+        }
+        &:nth-child(6){
+            &::before{
+                background-image: url('../img/page-team/team4.png');
+            }
+        }
+        &:nth-child(7){
+            &::before{
+                background-image: url('../img/page-team/team2.png');
+            }
+        }
+        &:nth-child(8){
+            &::before{
+                background-image: url('../img/page-team/team5.png');
+            }
+        }
+    }
+    &__information{
+        &_subtitle{
+            width: 232px;
+        }
+    }
+}

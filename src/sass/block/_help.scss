@@ -1,0 +1,26 @@
+.help{
+    width: 100%;
+    padding-top: 300px;
+    padding-bottom: 400px;
+    position: relative;
+    &__quantity{
+        font-family: 'SchoolBook';
+        font-size: 144px;
+        line-height: 110px;
+        color: $brown;
+        text-align: center;
+    }
+    &__deskr{
+        display: block;
+        margin: 0 auto;
+        margin-top: 20px;
+        width: 716px;
+        @extend %font80px;
+        font-family: 'Futura New';
+    }
+    &__image{
+        position: absolute;
+        right: 615px;
+        bottom: 241px;
+    }
+}

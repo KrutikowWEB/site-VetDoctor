@@ -1,0 +1,51 @@
+.specialist{
+    width: 100%;
+    padding-top: 100px;
+    padding-bottom: 206px;
+    &__shewron{
+        transition: all .2s;
+    }
+    &__wrapper{
+        position: relative;
+        padding: 0 248px;
+    }
+    &__slick{
+        margin-top: 48px;
+    }
+    .slick-prev{
+        z-index: 1;
+        position: absolute;
+        width: 40px;
+        height: 40px;
+        background-color: $orange;
+        border-radius: 50%;
+        border: none;
+        top: 50%;
+        transform: translateY(-50%);
+        left: -55px;
+        transition: all .2s;
+        &:hover{
+            background-color: $brown;
+        }
+    }
+    .slick-next{
+        z-index: 1;
+        position: absolute;
+        width: 40px;
+        height: 40px;
+        background-color: $orange;
+        border-radius: 50%;
+        border: none;
+        top: 50%;
+        transform: translateY(-50%);
+        right: -44px;
+        transition: all .2s;
+        &:hover{
+            background-color: $brown;
+        }
+    }
+    &__link{
+        margin-top: 36px;
+        text-align: center;
+    }
+}

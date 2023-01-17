@@ -1,0 +1,28 @@
+.bread-crumbs, .bread-crumbs2{
+    position: relative;
+    padding-right: 19px;
+    margin-top: 36px;
+    @extend %font20px;
+    color: $orange;
+    transition: all .2s;
+    span{
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+    &:hover{
+        text-decoration: none;
+        color: $brown;
+        .bread-crumbs{
+            fill: $brown;
+            stroke: $brown;
+        }
+    }
+}
+.bread-crumbs2{
+    span{
+        position: absolute;
+        top: 0;
+        left: -105px;
+    }
+}

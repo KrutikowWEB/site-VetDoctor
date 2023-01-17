@@ -1,0 +1,92 @@
+.footer{
+    width: 100%;
+    background-color: $brown;
+    padding: 80px 92px 60px 92px;
+    &__logo{
+        transition: all .1s;
+    }
+    &__top{
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+    &__main{
+        display: flex;
+        &-logo{
+            margin-right: 22px;
+            &:hover .footer__logo{
+                fill: $orange;
+            }
+        }
+        &-info{
+            margin: 9px 0;
+        }
+        &-title{
+            @extend %font50px;
+            color: #FFFFFF;
+        }
+        &-deskr{
+            margin-top: 5px;
+            @extend %font20px;
+            color: #FFFFFF;
+            font-weight: 400;
+        }
+    }
+    &__apps{
+        display: flex;
+        padding-top: 10px;
+        gap: 23px;
+    }
+    &__bottom{
+        display: flex;
+        justify-content: space-between;
+        padding-top: 30px;
+    }
+    &__info{
+        width: 51%;
+        margin-top: 29px;
+        padding-left: 112px;
+        display: flex;
+        justify-content: space-between;
+    }
+    &__policy{
+        width: 185px;
+    }
+    &__menu{
+        &-list{
+            list-style-type: none;
+            li{
+                margin-bottom: 2px;
+            }
+        }
+        &-link{
+            @extend %font20px;
+            color: #FFFFFF;
+            font-weight: 400;
+            transition: all 0.1s;
+            &:hover{
+                text-decoration: none;
+                color: $orange;
+            }
+        }
+    }
+    &__right{
+        display: flex;
+        flex-direction: column;
+    }
+    &__post{
+        margin-top: 30px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    &__heart{
+        margin-top: 70px;
+        @extend %font20px;
+        color: #FFFFFF;
+        font-weight: 400;
+        span{
+            margin: 4px;
+        }
+    }
+}

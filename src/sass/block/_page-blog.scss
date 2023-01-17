@@ -1,0 +1,57 @@
+.blog{
+    &__link{
+        position: relative;
+        display: block;
+        padding: 35px 30px 30px 285px;
+        width: 909px;
+        margin-bottom: 60px;
+        &:last-child{
+            margin-bottom: 0;
+        }
+        &::before{
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            background-image: url('../img/page-blog/blog__item.png');
+            width: 255px;
+            height: 255px;
+        }
+        cursor: pointer;
+        &:hover{
+            text-decoration: none;
+            .blog__title, .information__title, .information__subtitle{
+                color: $orange;
+            }
+        }
+    }
+    &__title{
+        transition: all .2s;
+        margin-bottom: 25px;
+        &_exit{
+            color: $brown-light;
+        }
+    }
+    &__slick{
+        width: 910px;
+        .slick-dots{
+            position: absolute;
+            top: -50px;
+            right: 0;
+            display: flex;
+            list-style-type: none;
+            background-color: #FFFFFF;
+        }
+        .slick-dots button {
+            background-color: #FFFFFF;
+            margin-right: 16px;
+            @extend %font20px2;
+            color: $brown-light;
+            border: none;
+            outline: none;
+        }
+        .slick-dots li[class="slick-active"] button {
+            color: $text;
+        }
+    }
+}

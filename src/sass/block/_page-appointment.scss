@@ -1,0 +1,28 @@
+.appointment{
+    &__btn{
+        margin-bottom: 24px;
+        width: 100%;
+        padding: 32px;
+        display: flex;
+        justify-content: space-between;
+        box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.1);
+        border-radius: 20px;
+        border: none;
+        background: #FFFFFF;
+        &:hover{
+            border: 1px solid #C3B9B5;
+            box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.1);
+            border-radius: 20px;
+        }
+    }
+    &__modallink{
+        display: block;
+        @extend %font20px;
+        color: $orange;
+        transition: all .2s;
+        &:hover{
+            text-decoration: none;
+            color: $brown;
+        }
+    }
+}

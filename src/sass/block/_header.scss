@@ -1,0 +1,94 @@
+.header{
+    width: 100%;
+    padding-top: 65px;
+    &__container{
+        width: 1760px;
+        margin: 0 auto;
+    }
+    &__wrapper{
+        display: flex;
+        align-items: center;
+    }
+    &__logo{
+        padding: 19px 10px;
+    }
+    &__location{
+        margin-left: 350px;
+        display: flex;
+        align-items: center;
+        border: none;
+        background-color: #fff;
+        &-icon{
+            fill: $orange;
+            transition: all .3s;
+        }
+        &-city{
+            margin-left: 6px;
+            transition: all .3s;
+            color: $orange;
+            @extend %font20px;
+        }
+        &:hover &-city{
+            color: $brown;
+        }
+        &:hover &-icon{
+            fill: $brown;
+        }
+    }
+}
+
+.menu{
+    width: 921px;
+    margin-left: 235px;
+    &__list{
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        list-style: none;
+        li{
+            &:hover{
+                .menu__sublist{
+                    display: block;
+                }
+            }
+        }
+    }
+    &__link{
+        padding: 20px 0;
+        @extend %font20px;
+        color: $brown-light;
+        transition: all .3s;
+        &:hover{
+            color: $brown;
+            text-decoration: none;
+        }      
+    }
+    &__sublist{
+        z-index: 5;
+        display: none;
+        width: 300px;
+        height: 230px;
+        position: absolute;
+        top: 40px;
+        left: 200px;
+        padding: 40px 0 40px 50px;
+        background: #FFFFFF;
+        box-shadow: 2px 2px 20px rgba(155, 82, 50, 0.2);
+        border-radius: 20px;
+        list-style: none;
+        li{
+            margin-bottom: 30px;
+        }
+    }
+    &__sublink{
+        @extend %font20px;
+        color: $text;
+        font-weight: 400;
+        &:hover{
+            text-decoration: none;
+            font-weight: 500;
+            color: $text;
+            text-indent: 10px;
+        }
+    }
+}

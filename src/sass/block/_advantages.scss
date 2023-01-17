@@ -1,0 +1,34 @@
+.advantages{
+    width: 100%;
+    padding-top: 70px;
+    padding-bottom: 309px;
+    &__list{
+        margin-top: 104px;
+        display: grid;
+        grid-template: repeat(3, 1fr)/repeat(3, 1fr);
+        row-gap: 70px;
+        column-gap: 94px;
+    }
+    &__item{
+        width: 484px;
+        &-title{
+            @extend %font30px;
+            color: $text;
+        }
+        &-info{
+            margin-top: 36px;
+            height: 150px;
+            display: grid;
+            grid-template-columns: 1fr 318px;
+        }
+        &-deskr{
+            @extend %font20px2;
+            color: $brown; 
+        }
+        &-image{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+}

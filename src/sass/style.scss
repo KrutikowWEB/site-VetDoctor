@@ -1,0 +1,71 @@
+@import 'libs/bootstrap-reboot.min.scss';
+@import 'libs/slick.scss';
+/* @import 'libs/animate.scss'; файл подключать когда надо, если не используется, то удалять */
+@import url('https://allfont.ru/allfont.css?fonts=schoolbook');
+@import 'libs/stylesheet.scss';
+@import 'base/extends';
+@import 'base/variables';
+@import 'base/bread-crumbs';
+
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Futura New' , sans-serif;
+    font-weight: bold;
+}
+
+h1, h2, h3, h4, h5, h6, p, a, ul {
+    margin: 0;
+}
+
+html, body{
+    height: 100%;
+}
+
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+}
+
+.main{
+    flex: 1 0 auto;
+}
+.footer{
+    flex: 0 0 auto;
+}
+
+.container{
+    width: 1640px;
+    margin: 0 auto;
+}
+
+@import 'block/header';
+@import 'block/modal';
+@import 'block/footer';
+@import 'block/icons';
+@import 'block/promo';
+@import 'block/button';
+@import 'block/service';
+@import 'block/history';
+@import 'block/title';
+@import 'block/specialist';
+@import 'block/help';
+@import 'block/advantages';
+@import 'block/app';
+@import 'block/location';
+
+
+@import 'block/page-general';
+@import 'block/page-services';
+@import 'block/page-history';
+@import 'block/page-team';
+@import 'block/page-blog';
+@import 'block/page-news';
+@import 'block/page-doctor';
+@import 'block/page-personal';
+@import 'block/page-appointment';
+@import 'block/page-ordering';
+
+@import 'base/media';
