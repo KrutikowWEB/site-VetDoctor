@@ -19,5 +19,6 @@
 - connect google maps
 - sliders, a lot of sliders!!
 - opening modal windows
+- drop-down list
 
 #### Used grid and flexbox layout
